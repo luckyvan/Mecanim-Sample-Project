@@ -470,6 +470,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.51999998
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &459703688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459703686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92240f5aa4787ce428fc7cccc2ba53f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &493982516
 Prefab:
   m_ObjectHideFlags: 0
@@ -630,6 +641,72 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ab415abe5b4069489a508eefcfd9c4e, type: 3}
   m_IsPrefabParent: 0
+--- !u!1001 &610341274
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400002, guid: 371d5446d39fa1748b102ef0ffacab66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 371d5446d39fa1748b102ef0ffacab66, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.0999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 371d5446d39fa1748b102ef0ffacab66, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.3999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 371d5446d39fa1748b102ef0ffacab66, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 371d5446d39fa1748b102ef0ffacab66, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 371d5446d39fa1748b102ef0ffacab66, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 371d5446d39fa1748b102ef0ffacab66, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: .707106709
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 371d5446d39fa1748b102ef0ffacab66, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 371d5446d39fa1748b102ef0ffacab66, type: 3}
+      propertyPath: m_Name
+      value: Popsicle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 371d5446d39fa1748b102ef0ffacab66, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c3ba21bcdc2c87344a0a137ba588b53d, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 371d5446d39fa1748b102ef0ffacab66, type: 3}
+  m_IsPrefabParent: 0
+--- !u!1 &610341275 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 371d5446d39fa1748b102ef0ffacab66, type: 3}
+  m_PrefabInternal: {fileID: 610341274}
+--- !u!135 &610341276
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 610341275}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.11800003
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &618277669
 GameObject:
   m_ObjectHideFlags: 0
