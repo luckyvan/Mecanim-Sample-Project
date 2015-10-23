@@ -888,7 +888,6 @@ GameObject:
   - 124: {fileID: 626247820}
   - 81: {fileID: 626247819}
   - 114: {fileID: 626247824}
-  - 114: {fileID: 626247825}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -969,25 +968,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 626247818}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34e5d4908d7c5fc459c83aa9b5bd0f09, type: 3}
+  m_Script: {fileID: 11500000, guid: 20c5a048dd38bbf4692770156f8d5755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   follow: {fileID: 1229425626}
   distanceAway: 7.5
   distanceUp: 7.5
   smooth: 3
---- !u!114 &626247825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 626247818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 563d031eb61720347b4851500b25b226, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasLog: 0
 --- !u!1 &666569026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1320,18 @@ CharacterController:
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: e8914d097ece7cc48a83d5fccd4098c0, type: 3}
   m_PrefabInternal: {fileID: 1229425623}
+--- !u!114 &1229425627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1229425624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563d031eb61720347b4851500b25b226, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasLog: 0
 --- !u!1001 &1243910831
 Prefab:
   m_ObjectHideFlags: 0
