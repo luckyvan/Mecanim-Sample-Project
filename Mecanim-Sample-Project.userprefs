@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\PlayerWithLog.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\PlayerFall.cs">
     <Files>
       <File FileName="Assets\_Scripts\PlayerAction.cs" Line="102" Column="4" />
       <File FileName="Assets\_Scripts\PlayerWithLog.cs" Line="40" Column="3" />
+      <File FileName="Assets\_Scripts\PlayerFall.cs" Line="13" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
