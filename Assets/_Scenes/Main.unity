@@ -130,6 +130,10 @@ Prefab:
       propertyPath: m_Name
       value: Edge 3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bfa808048c4da234ca113dbb2f5eb4a1, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfa808048c4da234ca113dbb2f5eb4a1, type: 2}
   m_IsPrefabParent: 0
@@ -307,6 +311,10 @@ Prefab:
       propertyPath: m_Name
       value: Edge 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bfa808048c4da234ca113dbb2f5eb4a1, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfa808048c4da234ca113dbb2f5eb4a1, type: 2}
   m_IsPrefabParent: 0
@@ -368,6 +376,10 @@ Prefab:
     - target: {fileID: 400000, guid: bfa808048c4da234ca113dbb2f5eb4a1, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bfa808048c4da234ca113dbb2f5eb4a1, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfa808048c4da234ca113dbb2f5eb4a1, type: 2}
@@ -1332,6 +1344,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasLog: 0
+--- !u!114 &1229425628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1229425624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c46077448b727d142a633f0ef33613bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slide: 1
+  Vault: 1
+  DeactivateCollider: 1
+  MatchTarget: 1
 --- !u!1001 &1243910831
 Prefab:
   m_ObjectHideFlags: 0
@@ -1374,6 +1401,10 @@ Prefab:
     - target: {fileID: 100000, guid: bfa808048c4da234ca113dbb2f5eb4a1, type: 2}
       propertyPath: m_Name
       value: Edge 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bfa808048c4da234ca113dbb2f5eb4a1, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfa808048c4da234ca113dbb2f5eb4a1, type: 2}
