@@ -1485,6 +1485,17 @@ MonoBehaviour:
   hollowLog: {fileID: 2028648188}
   leftHandle: {fileID: 375868921}
   rightHandle: {fileID: 676708278}
+--- !u!114 &1229425631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1229425624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db4a4738d4d0614ea574c4518fcd8a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1243910831
 Prefab:
   m_ObjectHideFlags: 0
