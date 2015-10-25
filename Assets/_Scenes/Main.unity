@@ -671,6 +671,21 @@ MonoBehaviour:
   - {fileID: 666569027}
   - {fileID: 308607559}
   - {fileID: 1600244687}
+--- !u!114 &485281586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 485281583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9369e33733106cc408a6c01d6a718060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cheatRoot: 1
+  bulletSpawnPoint: {fileID: 1995996685}
+  bullet: {fileID: 1943435712}
+  bulletParent: {fileID: 0}
 --- !u!1001 &493982516
 Prefab:
   m_ObjectHideFlags: 0
@@ -718,6 +733,10 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e0d4df37dae844d6a8716d6d10d00d76, type: 3}
   m_PrefabInternal: {fileID: 493982516}
+--- !u!4 &519489270 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400016, guid: 8c20c380af461574f99424a22acd34c1, type: 3}
+  m_PrefabInternal: {fileID: 669930547}
 --- !u!1001 &542660658
 Prefab:
   m_ObjectHideFlags: 0
@@ -1144,6 +1163,21 @@ MonoBehaviour:
   - {fileID: 666569027}
   - {fileID: 308607559}
   - {fileID: 1600244687}
+--- !u!114 &669930552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 669930549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9369e33733106cc408a6c01d6a718060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cheatRoot: 1
+  bulletSpawnPoint: {fileID: 519489270}
+  bullet: {fileID: 1943435712}
+  bulletParent: {fileID: 0}
 --- !u!1 &676708277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,6 +1299,14 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400006, guid: e8914d097ece7cc48a83d5fccd4098c0, type: 3}
   m_PrefabInternal: {fileID: 1229425623}
+--- !u!4 &963133596 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400016, guid: 8c20c380af461574f99424a22acd34c1, type: 3}
+  m_PrefabInternal: {fileID: 1720983283}
+--- !u!4 &1028342691 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400016, guid: 8c20c380af461574f99424a22acd34c1, type: 3}
+  m_PrefabInternal: {fileID: 1962451308}
 --- !u!1001 &1124605903
 Prefab:
   m_ObjectHideFlags: 0
@@ -2027,6 +2069,21 @@ MonoBehaviour:
   - {fileID: 666569027}
   - {fileID: 308607559}
   - {fileID: 1600244687}
+--- !u!114 &1720983288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1720983285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9369e33733106cc408a6c01d6a718060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cheatRoot: 1
+  bulletSpawnPoint: {fileID: 963133596}
+  bullet: {fileID: 1943435712}
+  bulletParent: {fileID: 0}
 --- !u!1001 &1764702933
 Prefab:
   m_ObjectHideFlags: 0
@@ -2424,6 +2481,25 @@ MonoBehaviour:
   - {fileID: 666569027}
   - {fileID: 308607559}
   - {fileID: 1600244687}
+--- !u!114 &1962451313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1962451310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9369e33733106cc408a6c01d6a718060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cheatRoot: 1
+  bulletSpawnPoint: {fileID: 1028342691}
+  bullet: {fileID: 1943435712}
+  bulletParent: {fileID: 0}
+--- !u!4 &1995996685 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400016, guid: 8c20c380af461574f99424a22acd34c1, type: 3}
+  m_PrefabInternal: {fileID: 485281581}
 --- !u!1001 &2000734610
 Prefab:
   m_ObjectHideFlags: 0

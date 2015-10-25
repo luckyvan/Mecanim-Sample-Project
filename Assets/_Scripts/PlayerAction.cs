@@ -67,12 +67,10 @@ public class PlayerAction : MonoBehaviour {
 			if (Physics.Raycast (transform.position + new Vector3 (0, .3f, 0), direction, out hit, 10)) {
 				if (hit.collider.tag == "Obstacle") {
 					target = hit.point;
-					Debug.Log (hit.distance);
 					vault = (hit.distance < 4.5f && hit.distance > 4f);
 				}
 			}
 		}
-		Debug.Log (vault);
  	}
 
 	void ProcessMatchTarget ()
