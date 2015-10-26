@@ -71,6 +71,7 @@ public class PlayerAction : MonoBehaviour {
 				}
 			}
 		}
+		anim.SetBool ("Vault", vault);
  	}
 
 	void ProcessMatchTarget ()
