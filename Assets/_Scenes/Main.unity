@@ -663,14 +663,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 485281583}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a755e135948908e4c84cfdf532198358, type: 3}
+  m_Script: {fileID: 11500000, guid: 7cc8f9e430bf9a040b10711931c6565e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wayPoints:
   - {fileID: 1124759123}
   - {fileID: 666569027}
-  - {fileID: 308607559}
   - {fileID: 1600244687}
+  - {fileID: 308607559}
 --- !u!114 &485281586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -679,7 +679,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 485281583}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9369e33733106cc408a6c01d6a718060, type: 3}
+  m_Script: {fileID: 11500000, guid: 24f1f76f1ce0ce54cb5c8de77a00f98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cheatRoot: 1
@@ -962,7 +962,6 @@ GameObject:
   - 124: {fileID: 626247820}
   - 81: {fileID: 626247819}
   - 114: {fileID: 626247824}
-  - 114: {fileID: 626247825}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1046,21 +1045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20c5a048dd38bbf4692770156f8d5755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &626247825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 626247818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34e5d4908d7c5fc459c83aa9b5bd0f09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  follow: {fileID: 1229425626}
-  distanceAway: 7.5
-  distanceUp: 7.5
-  smooth: 3
 --- !u!1 &666569026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,14 +1151,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 669930549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a755e135948908e4c84cfdf532198358, type: 3}
+  m_Script: {fileID: 11500000, guid: 7cc8f9e430bf9a040b10711931c6565e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wayPoints:
   - {fileID: 1124759123}
   - {fileID: 666569027}
-  - {fileID: 308607559}
   - {fileID: 1600244687}
+  - {fileID: 308607559}
 --- !u!114 &669930552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1183,7 +1167,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 669930549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9369e33733106cc408a6c01d6a718060, type: 3}
+  m_Script: {fileID: 11500000, guid: 24f1f76f1ce0ce54cb5c8de77a00f98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cheatRoot: 1
@@ -1526,10 +1510,6 @@ CharacterController:
   m_SkinWidth: .0199999996
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 1, z: 0}
---- !u!4 &1229425626 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400002, guid: e8914d097ece7cc48a83d5fccd4098c0, type: 3}
-  m_PrefabInternal: {fileID: 1229425623}
 --- !u!114 &1229425627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1550,16 +1530,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1229425624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: a1b6a0be1b0849547b246c2599d5abc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Slide: 1
-  Vault: 0
-  DeactivateCollider: 1
-  MatchTarget: 1
-=======
-  m_Script: {fileID: 11500000, guid: c46077448b727d142a633f0ef33613bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Slide: 1
@@ -1574,12 +1545,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1229425624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72b9f5a3d684394d8e1075053540e65, type: 3}
+  m_Script: {fileID: 11500000, guid: 776164ab53c47c34aa405e26ee71e194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hollowLog: {fileID: 2028648188}
-  leftHandle: {fileID: 375868921}
-  rightHandle: {fileID: 676708278}
 --- !u!114 &1229425631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,10 +1556,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1229425624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db4a4738d4d0614ea574c4518fcd8a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bf50d96047dbc144b4a94736c366b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
->>>>>>> c54a3570ee64a2eeb21e3e31f63a0a1c735848da
+  hollowLog: {fileID: 2028648188}
+  leftHandle: {fileID: 375868921}
+  rightHandle: {fileID: 676708278}
 --- !u!1001 &1243910831
 Prefab:
   m_ObjectHideFlags: 0
@@ -2083,14 +2053,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1720983285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a755e135948908e4c84cfdf532198358, type: 3}
+  m_Script: {fileID: 11500000, guid: 7cc8f9e430bf9a040b10711931c6565e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wayPoints:
   - {fileID: 1124759123}
   - {fileID: 666569027}
-  - {fileID: 308607559}
   - {fileID: 1600244687}
+  - {fileID: 308607559}
 --- !u!114 &1720983288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2099,7 +2069,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1720983285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9369e33733106cc408a6c01d6a718060, type: 3}
+  m_Script: {fileID: 11500000, guid: 24f1f76f1ce0ce54cb5c8de77a00f98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cheatRoot: 1
@@ -2495,14 +2465,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1962451310}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a755e135948908e4c84cfdf532198358, type: 3}
+  m_Script: {fileID: 11500000, guid: 7cc8f9e430bf9a040b10711931c6565e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wayPoints:
   - {fileID: 1124759123}
   - {fileID: 666569027}
-  - {fileID: 308607559}
   - {fileID: 1600244687}
+  - {fileID: 308607559}
 --- !u!114 &1962451313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2511,7 +2481,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1962451310}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9369e33733106cc408a6c01d6a718060, type: 3}
+  m_Script: {fileID: 11500000, guid: 24f1f76f1ce0ce54cb5c8de77a00f98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cheatRoot: 1

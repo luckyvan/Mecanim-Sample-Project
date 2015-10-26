@@ -7,21 +7,6 @@ public class PlayerAction : MonoBehaviour {
 	public bool DeactivateCollider;
 	public bool MatchTarget;
 
-<<<<<<< HEAD
-	private const float VaulatMatchTargetStart = .4f;
-	private const float VaulatMatchTargetStop = .51f;
-	private const float SlideMatchTargetStart = .11f;
-	private const float SlideMatchTargetStop = .40f;
-
-	private Animator Anim;
-	private CharacterController Controller;
-	private Vector3 Target;
-
-	// Use this for initialization
-	void Start () {
-		Anim = GetComponent<Animator>();
-		Controller = GetComponent<CharacterController>();
-=======
 	private const float VaultMatchTargetStart = .4f;
 	private const float VaultMatchTargetStop = .51f;
 	private const float SlideMatchTargetStart = .11f;
@@ -34,19 +19,10 @@ public class PlayerAction : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator> ();
 		controller = GetComponent<CharacterController> ();
->>>>>>> c54a3570ee64a2eeb21e3e31f63a0a1c735848da
 	}
 	
 	// Update is called once per frame
 	void Update () {
-<<<<<<< HEAD
-		if (Anim) {
-			if (Slide) {
-				ProcessSlide ();
-			}
-			if (DeactivateCollider) {
-				Controller.enabled = Anim.GetFloat ("Collider") > .5f;
-=======
 	    if (anim) {
 			if (Slide) {
 				ProcessSlide ();
@@ -56,7 +32,6 @@ public class PlayerAction : MonoBehaviour {
 			}
 			if (DeactivateCollider) {
 				controller.enabled = anim.GetFloat ("Collider") > .5f;
->>>>>>> c54a3570ee64a2eeb21e3e31f63a0a1c735848da
 			}
 			ProcessMatchTarget ();
 		}
@@ -65,14 +40,6 @@ public class PlayerAction : MonoBehaviour {
 	void ProcessSlide ()
 	{
 		bool slide = false;
-<<<<<<< HEAD
-		RaycastHit hit;
-		Vector3 dir = transform.TransformDirection (Vector3.forward); //??????
-		if (Anim.GetCurrentAnimatorStateInfo (0).IsName ("Locomotion.Run")) {
-			if (Physics.Raycast (transform.position + new Vector3(0, 1.5f, 0), dir, out hit, 10)) {
-				if (hit.collider .tag == "Obstacle") {
-					Target = transform.position + 1.25f*hit.distance*dir;
-=======
 
 		RaycastHit hit;
 		//transform from local space to world space.
@@ -82,24 +49,10 @@ public class PlayerAction : MonoBehaviour {
 			if (Physics.Raycast (transform.position + new Vector3 (0, 1.5f, 0), direction, out hit, 10)) {
 				if (hit.collider.tag == "Obstacle") {
 					target = transform.position + 1.25f * hit.distance * direction;//.25 distance over the fence
->>>>>>> c54a3570ee64a2eeb21e3e31f63a0a1c735848da
 					slide = (hit.distance < 6);
 				}
 			}
 		}
-<<<<<<< HEAD
-		Anim.SetBool ("Slide", slide);
-	}
-
-	void ProcessMatchTarget ()
-	{
-		AnimatorStateInfo info = Anim.GetCurrentAnimatorStateInfo (0);
-		Quaternion q = new Quaternion();
-		if (info.IsName ("Base Layer.Slide")) {
-			Anim.MatchTarget (Target, q, AvatarTarget.Root, new MatchTargetWeightMask(new Vector3(1, 0, 1), 0), SlideMatchTargetStart, SlideMatchTargetStop );
-		}
-	}
-=======
 		anim.SetBool ("Slide", slide);
 	}
 
@@ -147,5 +100,4 @@ public class PlayerAction : MonoBehaviour {
 		}
 
  	}
->>>>>>> c54a3570ee64a2eeb21e3e31f63a0a1c735848da
 }
