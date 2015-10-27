@@ -30,7 +30,8 @@ public class NPCShoot : MonoBehaviour {
 			animator.SetBool ("Shoot", true);
 			ManageShootCycle ();
 			if (!hasShootInCycle) {
-				if (animator.GetFloat ("Throw") > .99f) {
+				//Debug.Log (animator.GetFloat ("Throw"));
+				if (animator.GetFloat ("Throw") > .99f) { //The Throw animation reaches the end of the movement. 24 frame, then spawn the bullet
 					SpawnBullet ();
 				}
 			}
@@ -58,7 +59,9 @@ public class NPCShoot : MonoBehaviour {
 	{
 		AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo (0);
 		float time = Mathf.Repeat (stateInfo.normalizedTime, 1.0f); // the normalized time?????????
+		//Debug.Log (time);
 		if (time < previousStateTime) { // meaning the animation has restart the play.
+			//Debug.Log ("" + time + " " + previousStateTime + " " + animator.GetFloat ("Throw"));
 			hasShootInCycle = false;
 		}
 		previousStateTime = time;
