@@ -76,7 +76,7 @@ public class PlayerAction : MonoBehaviour {
 		if (anim.GetCurrentAnimatorStateInfo(0).IsName ("Locomotion.Run")) {
 			if (Physics.Raycast (transform.position + new Vector3 (0, .3f, 0), direction, out hit, 10)) {
 				if (hit.collider.tag == "Obstacle") {
-					target = hit.point;
+					target = hit.point; //target be the obstacle itself
 					vault = (hit.distance < 4.5f && hit.distance > 4f);
 
 					DisplayTarget ();
@@ -98,7 +98,7 @@ public class PlayerAction : MonoBehaviour {
 			                 AvatarTarget.Root, //root is the target body part
 			                 new MatchTargetWeightMask (new Vector3 (1, 0, 1), //x,z 1 weight
 			                          0), // zero rotation weight
-			                 SlideMatchTargetStart, 
+			                 SlideMatchTargetStart, //nomalized Animation Time. Could See the animation by selecting  animation window and choosing the right animation clip in it.
 			                 SlideMatchTargetStop);
 		} else if (stateInfo.IsName ("Base Layer.Vault")) {
 			if (MatchTarget) {
