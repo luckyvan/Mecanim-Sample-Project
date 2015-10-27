@@ -7,12 +7,18 @@ public class PlayerAction : MonoBehaviour {
 	public bool DeactivateCollider;
 	public bool MatchTarget;
 
+	public GameObject bullet;
+	public float bulletDuration = 1f;
+	private float bulletDisplayTime = 0f;
+	public bool displayTarget;
+
 	private const float VaultMatchTargetStart = .4f;
 	private const float VaultMatchTargetStop = .51f;
 	private const float SlideMatchTargetStart = .11f;
 	private const float SlideMatchTargetStop = .4f;
 
 	private Animator anim;
+	// CharacterController use SimpleMove and Move as its interface.
 	private CharacterController controller;
 	private Vector3 target = Vector3.zero;
 	// Use this for initialization
@@ -31,6 +37,8 @@ public class PlayerAction : MonoBehaviour {
 				ProcessVault ();
 			}
 			if (DeactivateCollider) {
+				//Selecting Slide Animation in Animation View can see its curve for "Collider" Parameter
+				//When "Collider" < .5f, the Player Slides across the fence, hence need to disable collider component to pass it
 				controller.enabled = anim.GetFloat ("Collider") > .5f;
 			}
 			ProcessMatchTarget ();
@@ -50,6 +58,8 @@ public class PlayerAction : MonoBehaviour {
 				if (hit.collider.tag == "Obstacle") {
 					target = transform.position + 1.25f * hit.distance * direction;//.25 distance over the fence
 					slide = (hit.distance < 6);
+
+					DisplayTarget ();
 				}
 			}
 		}
@@ -68,6 +78,8 @@ public class PlayerAction : MonoBehaviour {
 				if (hit.collider.tag == "Obstacle") {
 					target = hit.point;
 					vault = (hit.distance < 4.5f && hit.distance > 4f);
+
+					DisplayTarget ();
 				}
 			}
 		}
@@ -101,4 +113,13 @@ public class PlayerAction : MonoBehaviour {
 		}
 
  	}
+
+	void DisplayTarget ()
+	{
+		if (displayTarget && (Time.time > bulletDisplayTime)) {
+			GameObject newBullet = Instantiate (bullet, target, Quaternion.Euler (0, 0, 0)) as GameObject;
+			Destroy (newBullet, bulletDuration);
+			bulletDisplayTime = Time.time + bulletDuration;
+		}
+	}
 }
