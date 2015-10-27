@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour {
 				Input.GetAxis ("Horizontal"), //between -1 .. 1. Increase by the length of Press Horizontal Key.
 				0,
 				Input.GetAxis ("Vertical"));
-			Debug.Log (dir.ToString ());
+			//Debug.Log (dir.ToString ());
 			Vector3 worldDir = Camera.main.transform.rotation * dir; //make it towards camera direction, or make the input into camera space
 																	// the camera always behind the player, hence after the rotation, the input would always be relative to player space
 								//transform.rotation * dir

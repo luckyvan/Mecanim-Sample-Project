@@ -86,7 +86,7 @@ public class NPCShoot : MonoBehaviour {
 				                                      Time.deltaTime*5); // speed up a little
 				animator.rootRotation = transform.rotation; // use transform's rotationt to drive animation
 			} 
-			GetComponent<CharacterController>().Move (animator.deltaPosition);
+			GetComponent<CharacterController>().Move (animator.deltaPosition); // without this line, the Teddy won't move at all. Since its root motion is not controlled by animator.
 			transform.rotation = animator.rootRotation; // sync the transform's rotation with animation
 			Vector3 position = transform.position;
 			position.y = 0; // don't know why it is necessary.
