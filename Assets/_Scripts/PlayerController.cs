@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour {
 				Input.GetAxis ("Horizontal"), //between -1 .. 1. Increase by the length of Press Horizontal Key.
 				0,
 				Input.GetAxis ("Vertical"));
-			//Debug.Log (dir.ToString ());
+			Debug.Log (dir.ToString ());
 			Vector3 worldDir = Camera.main.transform.rotation * dir; //make it towards camera direction, or make the input into camera space
 																	// the camera always behind the player, hence after the rotation, the input would always be relative to player space
 								//transform.rotation * dir
@@ -40,8 +40,11 @@ public class PlayerController : MonoBehaviour {
 				Vector3 axis = Vector3.Cross (
 					transform.forward, //blue axis of the transform in world space
 					worldDir); // left rules. 
+				//Debug.Log (transform.forward.ToString ());
+				//Debug.Log (worldDir.ToString ());
+				//Debug.Log (axis.y);
 				//Debug.Log (transform.forward);
-				_direction = Vector3.Angle (transform.forward, worldDir)/180.0f * (axis.y < 0 ? -1 : 1);
+				_direction = Vector3.Angle (transform.forward, worldDir)/180.0f * (axis.y < 0 ? -1 : 1); // it favors the right direction, when click down and axis.y == 0, turn right
 				//Debug.Log (_direction);
 			}
 			speed = _speed;
